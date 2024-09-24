@@ -9,4 +9,8 @@ export default (app) => {
     req.session.password = password;
     res.send(`Logged in as ${username}`);
   });
+
+  app.get("/contact", (req, res) => {
+    res.send("Contact page");
+  });
 };
